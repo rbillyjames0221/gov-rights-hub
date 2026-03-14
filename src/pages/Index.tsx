@@ -1,14 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import PageLayout from "@/components/layout/PageLayout";
+import HeroSection from "@/components/sections/HeroSection";
+import WhatIsSection from "@/components/sections/WhatIsSection";
+import LegalSection from "@/components/sections/LegalSection";
+import RightsSection from "@/components/sections/RightsSection";
+import OrganizationsSection from "@/components/sections/OrganizationsSection";
+import NegotiationSection from "@/components/sections/NegotiationSection";
+import NewsSection from "@/components/sections/NewsSection";
+import ResourcesSection from "@/components/sections/ResourcesSection";
+import FAQSection from "@/components/sections/FAQSection";
+import ContactSection from "@/components/sections/ContactSection";
 
-const Index = () => {
+export default function Index() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <PageLayout>
+      <HeroSection />
+      <WhatIsSection />
+      <LegalSection />
+      <RightsSection />
+      <OrganizationsSection />
+      <NegotiationSection />
+      <NewsSection />
+      <ResourcesSection />
+      <FAQSection />
+      <ContactSection />
+    </PageLayout>
   );
-};
-
-export default Index;
+}
